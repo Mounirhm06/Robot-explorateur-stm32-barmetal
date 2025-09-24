@@ -1,3 +1,4 @@
+/* Développé par HAMMAMI Mounir*/
 #include <stdio.h>
 #include "stm32l4xx_hal.h"
 #include "stm32l4xx.h"
@@ -86,3 +87,4 @@ void Reset_yawVal(void)
 	/*pour eviter la derive du capteur il faut renitialiser a chaque fin de consigne d'angle*/
 	yawVal = 0;
 }
+
