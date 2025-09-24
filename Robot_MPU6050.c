@@ -18,9 +18,9 @@ float yawVal = 0;
 /*Init dU MPU6050*/
 void MPU6050_Init(void)
 {
-	uint8_t check_adr = 0;//si le capteur est connecte au bus il renvoie son adresse 0x68(104 dec) via le bus
-	uint8_t commande[2] = {0};//commande envoyees au capteur
-	//tester si le capteur est connecte au bus
+	uint8_t check_adr = 0;//si le capteur est connecté au bus il renvoie son adresse 0x68(104 dec) via le bus
+	uint8_t commande[2] = {0};//commande envoyées au capteur
+	//tester si le capteur est connecté au bus
 	HAL_I2C_Master_Transmit(&hi2c1,MPU_adrr,&WHO_AMI_Reg_adrr,1,100);
 	HAL_I2C_Master_Receive(&hi2c1,MPU_adrr,&check_adr,1,100);//lire le registre WHO_AM_I
 	if(check_adr == 104){//capteur bien detecter
@@ -49,7 +49,7 @@ void MPU6050_Init(void)
 
 }
 
-/*receptions des donnes de Gyro*/
+/*receptions des données de Gyro*/
 void Gyro_mesures(float *pGyro_mesur)
 {
 	uint8_t gyro_mesur[6] = {0};//stocker les valeurs brutes recu du gyro
@@ -84,7 +84,8 @@ float yaw_value(float *pGyro_mesures,uint32_t tempsTi,uint32_t tempsTiPlus)
 
 void Reset_yawVal(void)
 {
-	/*pour eviter la derive du capteur il faut renitialiser a chaque fin de consigne d'angle*/
+	/*pour eviter la derive du capteur, il faut renitialiser cette valeur à chaque fin de consigne d'angle*/
 	yawVal = 0;
 }
+
 
