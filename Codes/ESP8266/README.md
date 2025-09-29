@@ -7,13 +7,6 @@
     ```
     choco install make
     ```
-- Le programme côté PC utilise :
-  ```c
-  #define SERVER_IP "192.168.4.1"   // Adresse IP de la carte ESP8266
-  #define SERVER_PORT 23            // Port de connexion TCP
-  ```
-- **Pas besoin d'utiliser PuTTY** ou un autre client telnet externe
-
 ### Étapes de connexion
 
 1. **Se déconnecter des autres réseaux Wi-Fi**
@@ -27,7 +20,7 @@
      ```
      ping 192.168.4.1
      ```
-
+   - On utilise le port 23 pour établir la connexion TCP entre le PC et la carte esp8266
 3. **Compiler et lancer le programme côté PC**
    - Ouvrir PowerShell (Windows) ou un terminal (Linux).
    - Se placer dans le répertoire `code_PC` téléchargé depuis ce dépôt.
