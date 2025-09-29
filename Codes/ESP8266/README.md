@@ -16,11 +16,11 @@
    - Nom du réseau : **ESP8266_AP**
    - Mot de passe : **12345678**
    - L'adresse IP de la carte est généralement **192.168.4.1**.
-   - Sous Linux, vous pouvez vérifier la connexion ou l’adresse IP en tapant dans un terminal :
+   - Vous pouvez vérifier la connexion ou l’adresse IP en tapant dans un terminal :
      ```
      ping 192.168.4.1
      ```
-   - On utilise le port 23 pour établir la connexion TCP entre le PC et la carte esp8266
+   - La connexion TCP entre le PC et la carte Esp8266 est établie sur le port 23
 3. **Compiler et lancer le programme côté PC**
    - Ouvrir PowerShell (Windows) ou un terminal (Linux).
    - Se placer dans le répertoire `code_PC` téléchargé depuis ce dépôt.
