@@ -23,7 +23,7 @@
    - La connexion TCP entre le PC et la carte Esp8266 est établie sur le port 23
 3. **Compiler et lancer le programme côté PC**
    - Ouvrir PowerShell (Windows) ou un terminal (Linux).
-   - Se placer dans le répertoire `code_PC` téléchargé depuis ce dépôt.
+   - Se placer dans le répertoire `PC` téléchargé depuis ce dépôt.
    - Compiler avec :
      ```
      make
