@@ -5,7 +5,6 @@
 #include "stm32l4xx.h"
 #include "main.h"
 #include "i2c.h"
-#include "gpio.h"
 #include "Timers.h"
 #include "Robot_Communication.h"
 #include "Robot_control_direction.h"
@@ -221,3 +220,4 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
