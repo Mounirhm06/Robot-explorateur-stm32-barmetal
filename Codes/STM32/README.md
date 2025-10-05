@@ -29,7 +29,7 @@ Ce dossier contient le code source de la carte STM32.
 - **Timers.c**  
   Configure et utilise les timers internes de la STM32 pour la gestion du temps, des temporisations et des interruptions périodiques nécessaires au fonctionnement du robot.
 
-- **i2c.c**
+- **i2c.c**  
   pour initialiser le périphérique I2C de STM ( ce code est générer directement par STM32CubeIDE)
 ---
 
