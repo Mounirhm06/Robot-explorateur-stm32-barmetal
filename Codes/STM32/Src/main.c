@@ -34,20 +34,8 @@ int main(void)
 	uint8_t Distance_instruction[20] = {0};
 	int16_t Angel_instruction[20] = {0};
 
-
-	//uint16_t tour = 0;
-	//float Angle[100] = {0};
-	//float Distance [100] = {0};
-	//uint16_t value = 0;
-	//char buffer[12] ;
-
-
-
 	HAL_Init();
-	MX_GPIO_Init();
 	MX_I2C1_Init();
-
-
 
 	/*Init horloge et timers*/
 	SystemClock_Config();
@@ -220,4 +208,5 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
 
