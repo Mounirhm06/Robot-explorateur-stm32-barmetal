@@ -30,7 +30,7 @@ Les instructions envoyées vers le robot suivent un format précis :
 - Chaque instruction inclut :
   - **distance** à parcourir (2 octets)
   - **angle** à tourner (3 octets)
-- Les instructions sont envoyées de façon séquentielle : nombre d'instructions, puis les distances, puis les angles correspondants.
+- Les instructions sont envoyées de façon séquentielle : nombre d'instructions, puis les distances, puis les angles correspondants.Voir l'image exemple d'instructions robot.png
 
 ### Unité de distance
 
